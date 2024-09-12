@@ -16,10 +16,10 @@ const Login = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     try {
       const response = await fetch(
-        "http://organickbackend.onrender.com/user/user-login",
+        "https://organickbackend.onrender.com/user/user-login",
         {
           method: "POST",
           headers: {

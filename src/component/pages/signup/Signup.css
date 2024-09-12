@@ -1,0 +1,27 @@
+.login-section {
+    height: 700px;
+    background-color: #f8f9fa;
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.login-container h2 {
+    color: #343a40;
+}
+
+.login-section .password-icon {
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+}
+
+.login-section .password-icon:hover {
+    color: #000;
+}

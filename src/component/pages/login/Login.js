@@ -15,38 +15,6 @@ const Login = () => {
     setShowPassword(!showPassword);
   };
 
-  // const handleSubmit = async (e) => {
-  //   // e.preventDefault();
-  //   try {
-  //     const response = await fetch(
-  //       "https://organickbackend.onrender.com/user/user-login",
-  //       {
-  //         method: "POST",
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify({
-  //           email,
-  //           password,
-  //         }),
-  //       }
-  //     );
-  //     const data = await response.json();
-  //     if (response.ok) {
-  //       setSuccess("Login successful!");
-  //       setError(null);
-  //       localStorage.setItem("isLogin", true);
-  //       navigate("/");
-  //     } else {
-  //       setError(data.message);
-  //       setSuccess(null);
-  //     }
-  //   } catch (error) {
-  //     setError("Error occurred during login. Please try again.");
-  //     setSuccess(null);
-  //   }
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -64,7 +32,6 @@ const Login = () => {
         }
       );
       const data = await response.json();
-      console.log(data); // log the response
       if (response.ok) {
         setSuccess("Login successful!");
         setError(null);
@@ -75,7 +42,6 @@ const Login = () => {
         setSuccess(null);
       }
     } catch (error) {
-      console.error("Error:", error);
       setError("Error occurred during login. Please try again.");
       setSuccess(null);
     }

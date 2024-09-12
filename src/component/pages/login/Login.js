@@ -19,7 +19,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        "https://organickbackend.onrender.com/user/user-login",
+        "http://organickbackend.onrender.com/user/user-login",
         {
           method: "POST",
           headers: {
